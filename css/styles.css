@@ -100,13 +100,6 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     border: none;
-    width: 95%;
-}
-
-@media (min-width: 768px) {
-    .boton {
-        width: auto;
-    }
 }
 
 .boton:hover {
@@ -116,6 +109,15 @@ img {
 @media (min-width: 768px) {
     .boton {
         display: inline-block;
+    }
+}
+
+.w-sm-100 {
+    width: 100%;
+}
+@media (min-width: 768px){
+    .w-sm-100 {
+        width: auto;
     }
 }
 
