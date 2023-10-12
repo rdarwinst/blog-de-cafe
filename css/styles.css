@@ -115,7 +115,8 @@ img {
 .w-sm-100 {
     width: 100%;
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
     .w-sm-100 {
         width: auto;
     }
@@ -127,6 +128,28 @@ img {
 
 .boton--secundario {
     background-color: var(--primario);
+}
+
+.error,
+.correcto {
+    margin: 0;
+    padding: .5rem;
+    text-align: center;
+    font-family: var(--fuenteHeading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: .5rem;
+}
+
+.error {
+    background-color: #ff6961;
+    color: #9a2f2a;
+}
+
+.correcto {
+    background-color: #a9d39e;
+    color: #4f6c4b;
 }
 
 /* Header */
@@ -208,7 +231,7 @@ img {
     .contenido-principal {
         display: grid;
         grid-template-areas: "sidebar"
-                             "principal";
+            "principal";
         grid-template-rows: repeat(2, auto);
         gap: 2rem;
     }
